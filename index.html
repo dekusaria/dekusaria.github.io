@@ -9,7 +9,7 @@
 </head>
 <body style="background-image: url(images\\background.jpg);">
 
-    <nav class="navbar sticky-top navbar-expand-lg">
+    <nav class="navbar navbar-dark sticky-top navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Max Rickel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -269,16 +269,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6 about-me-card">
-                <p>Hello, World! My name is Max and I'm a 28 year old software developer from Minneapolis, MN.</p>
-                <p>
-                    I'm a musician in my spare time, and have spent the better part of the last decade playing in local and touring bands. 
-                    Currently, my musical focus has been on drumming, but my real passion is to sing. Err... yell I guess? Usually both!
-                </p>
-                <p>
-                    Video games have always been a big part of my life as well. My top 3 favorite games would have to be The Legend of Zelda: Majora's Mask,
-                    Final Fantasy X, and Pokemon Crystal. Nintendo games have a special place in my heart, but lately I've mostly been playing Destiny 2.
-                </p>
+            <div class="col-12 about-me-card">
+                <div class="row mx-auto">
+                    <div class="col-auto">
+                        <p>Hello, World! My name is Max and I'm a 28 year old software developer from Minneapolis, MN.</p>
+                        <p>
+                            I'm a musician in my spare time, and have spent the better part of the last decade playing in local and touring bands. 
+                            Currently, my musical focus has been on drumming, but my real passion is to sing. Err... yell I guess? Usually both!
+                        </p>
+                        <p>
+                            Video games have always been a big part of my life as well. My top 3 favorite games would have to be The Legend of Zelda: Majora's Mask,
+                            Final Fantasy X, and Pokemon Crystal. Nintendo games have a special place in my heart, but lately I've mostly been playing Destiny 2.
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <span id="picWrapper"><img class="img-fluid" id="profilePic" src="images/portrait.jpg" /></span>
+                    </div>
+                </div>
+                
                 <p>
                     My love for dogs is stronger than most, and being a Dog Dad brings joy to my life on a daily basis. My dog, David Copper Field (he prefers to go by Copper), 
                     is a Beagle / Bulldog mix, and he is <u>THE BEST BOY</u>. Chonky, yet lean, stinky, yet clean, Copy is one-of-a-kind.
@@ -292,19 +300,62 @@
                 <p>
                     Thank you for checking out my personal portfolio!
                 </p>
-                <div id="contactMe" class="container">
-                    <div class="row mx-auto justify-content-start">
-                        <div class="col-auto">
-                            <h2>Are you hiring?</h2>
-                        </div>
-                    </div>
-                    <div class="row mx-auto" style="text-align: end;">
-                        <h3>Why not Zoidberg?</h3>
-                    </div>
+            </div>
+            <div class="col-sm-12 col-md-6 about-me-image">
+                
+            </div>
+        </div>
+        <div id="contactCard" class="container">
+            <div class="row mx-auto">
+                <div class="col-auto">
+                    <h2>Hiring?</h2>
                 </div>
             </div>
-            <div class="col-6 about-me-image">
-                <span id="picWrapper"><img id="profilePic" src="images/portrait.jpg" /></span>
+            <div class="row mx-auto justify-content-end">
+                <div class="col-auto">
+                    <a class="contact-link" href="assets/MaxwellRickelResume.pdf" download="MaxwellRickelResume"><h2>Take a Resume!</h2></a>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-auto">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div class="row mx-auto justify-content-end align-items-center">
+                <div class="col-auto">
+                    <a class="contact-link" href="mailto:m.rickel@outlook.com">
+                        <img class="contact-icon" src="assets/iconEmail.png" alt="Email link"/>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="contact-link" href="mailto:m.rickel@outlook.com">
+                        <h4>Email</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="row mx-auto justify-content-end align-items-center">
+                <div class="col-auto">
+                    <a class="contact-link" href="https://www.linkedin.com/in/mrickel/">
+                        <img class="contact-icon" src="assets/iconLinkedin.png" alt="Linkedin link"/>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="contact-link" href="https://www.linkedin.com/in/mrickel/">
+                        <h4>Linkedin</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="row mx-auto justify-content-end align-items-center">
+                <div class="col-auto">
+                    <a class="contact-link" href="https://github.com/dekusaria/SG-Completed-Projects">
+                        <img class="contact-icon" src="assets/iconGithub.png" alt="Github link"/>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="contact-link" href="https://github.com/dekusaria/SG-Completed-Projects">
+                        <h4>Github</h4>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -316,4 +367,7 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="home.js"></script>
 </body>
+<footer>
+     © Max Rickel 2021 | some assets courtesy of <a href="https://icons8.com/">icons8</a>
+</footer>
 </html>

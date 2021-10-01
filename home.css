@@ -316,6 +316,32 @@ td:hover {
 }
 
 #profilePic {
-    max-width: 100%;
+    max-width: 50%;
     max-height: 80%;
+}
+
+#contactCard {
+    color: var(--white);
+    margin: 40px 0 40px 0;
+    padding: 20px 40px 20px 40px;
+    background-color: var(--transparent);
+    border-radius: 1em;
+}
+
+.contact-link {
+    color: var(--white);
+}
+
+.contact-link:hover {
+    color: var(--blue);
+}
+
+.contact-icon {
+    max-height: 2em;
+    width: auto;
+}
+
+footer {
+    background-color: var(--black);
+    text-align: center;
 }
