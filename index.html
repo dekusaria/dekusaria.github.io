@@ -18,16 +18,24 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#landingPage">Home</a>
+                    <a class="nav-link" href="mailto:m.rickel@outlook.com">
+                        <img class="nav-icon" src="assets/iconEmail.png" alt="Email link"/>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#skillsPage">Skills</a>
+                    <a class="nav-link" href="https://www.linkedin.com/in/mrickel/">
+                        <img class="nav-icon" src="assets/iconLinkedin.png" alt="Linkedin link"/>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#projectsPage">Projects</a>
+                    <a class="nav-link" href="https://github.com/dekusaria/SG-Completed-Projects">
+                        <img class="nav-icon" src="assets/iconGithub.png" alt="Github link"/>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#aboutMePage">About Me</a>
+                    <a class="nav-link" href="assets/MaxwellRickelResume.pdf" download="MaxwellRickelResume">
+                        <img class="nav-icon" src="assets/iconResume.png" alt="Resume download link">
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -35,10 +43,10 @@
     </nav>
 
 <section id="landingPage" >
-    <div class="container">
-        <div class="row  mx-auto">
-            <div class="col-12">
-                <div id="siteHeader" class="row align-items-center justify-content-center">
+    <div class="container d-flex align-items-center">
+        <div class="row mx-auto justify-content-center">
+            <div class="col-auto">
+                <div id="siteHeader" class="row mx-auto justify-content-center">
                     <div class="col-auto my-auto fade-in-up">
                         <h1><strong>Max Rickel</strong></h1>
                     </div>
@@ -46,21 +54,21 @@
                         <h3>Full-Stack</h3>
                         <h4>.NET Developer</h3>
                     </div>
-                    <div class="row mx-auto landing-nav-fade-in">
-            <div class="col-12">
-                <div id="landingNav" class="row mx-auto align-items-center justify-content-center shadow-lg">
-                    <div class="col-auto">
-                        <a class="landing-link" href="#projectsPage">Projects</a>
-                    </div>
-                    <div class="col-auto">
-                        <a class="landing-link" href="#skillsPage">Skills</a>
-                    </div>
-                    <div class="col-auto">
-                        <a class="landing-link" href="#aboutMePage">About Me</a>
-                    </div>
                 </div>
-            </div>
-        </div>
+                <div class="row mx-auto justify-content-center">
+                    <div class="col-auto">
+                        <div id="landingNav" class="row mx-auto landing-nav-fade-in justify-content-center">
+                            <div class="col-auto">
+                                <a class="landing-link" href="#projectsPage">Projects</a>
+                            </div>
+                            <div class="col-auto">
+                                <a class="landing-link" href="#skillsPage">Skills</a>
+                            </div>
+                            <div class="col-auto">
+                                <a class="landing-link" href="#aboutMePage">About Me</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,27 +182,80 @@
                 <h1 class="page-header">Technical Skills</h1>
             </div>
         </div>
-        <div class="row mx-auto align-items-center">
-            <div class="column col skills-wrapper">
-                <img class="skills-icon" src="assets/iconCsharp.png"/>
+        <div class="row mx-auto align-items-center justify-content-center">
+            <div class="skills-wrapper">
+                <img class="col-auto skills-icon" src="assets/iconCsharp.png"/>
             </div>
-            <div class="column col skills-wrapper">
-                <img class="skills-icon" src="assets/iconHtml5.png"/>
+            <div class="skills-wrapper">
+                <img class="col-auto skills-icon" src="assets/iconHtml5.png"/>
             </div>
-            <div class="column col skills-wrapper">
-                <img class="skills-icon" src="assets/iconCss3.png"/>
+            <div class="skills-wrapper">
+                <img class="col-auto skills-icon" src="assets/iconCss3.png"/>
             </div>
-            <div class="column col skills-wrapper">
-                <img class="skills-icon" src="assets/iconJavascript.png"/>
+            <div class="skills-wrapper">
+                <img class="col-auto skills-icon" src="assets/iconJavascript.png"/>
             </div>
-            <div class="column col skills-wrapper">
-                <img class="skills-icon" src="assets/iconAsp.png"/>
+            <div class="skills-wrapper">
+                <img class="col-auto skills-icon" src="assets/iconAsp.png"/>
             </div>
-            <div class="column col skills-wrapper">
-                <img class="skills-icon" src="assets/iconSql.png"/>
+            <div class="skills-wrapper">
+                <img class="col-auto skills-icon" src="assets/iconSql.png"/>
             </div>
-            <div class="column col skills-wrapper">
-                <img class="skills-icon" src="assets/iconAdo.png"/>
+            <div class="skills-wrapper">
+                <img class="col-auto skills-icon" src="assets/iconAdo.png"/>
+            </div>
+        </div>
+        <div class="row mx-auto justify-content-center">
+            <div class="col-auto">
+                <table id="skillsTable" class="table">
+                    <tbody>
+                        <tr>
+                            <td>C# / .NET</td>
+                            <td>HTML 5</td>
+                            <td>SQL DML / DDL</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>CSS 3</td>
+                            <td>jQuery / Ajax</td>
+                        </tr>
+                        <tr>
+                            <td>Linq</td>
+                            <td>Bootstrap</td>
+                            <td>JSON</td>
+                        </tr>
+                        <tr>
+                            <td>ASP.NET MVC</td>
+                            <td>ADO.NET</td>
+                            <td>ASP.NET Identity</td>
+                        </tr>
+                        <tr>
+                            <td>REST Web API</td>
+                            <td>Unity</td>
+                            <td>Relational Databases</td>
+                        </tr>
+                        <tr>
+                            <td>Entity Framework</td>
+                            <td>NuGet Package Manager</td>
+                            <td>Debugging Techniques</td>
+                        </tr>
+                        <tr>
+                            <td>NUnit</td>
+                            <td>Visual Studio 2019</td>
+                            <td>Visual Studio Code</td>
+                        </tr>
+                        <tr>
+                            <td>MS SQL Server</td>
+                            <td>Test Driven Development</td>
+                            <td>Data / Class Modeling</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Office</td>
+                            <td>Version Control</td>
+                            <td>Object Oriented Programming</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -208,7 +269,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col about-me-card">
+            <div class="col-6 about-me-card">
                 <p>Hello, World! My name is Max and I'm a 28 year old software developer from Minneapolis, MN.</p>
                 <p>
                     I'm a musician in my spare time, and have spent the better part of the last decade playing in local and touring bands. 
@@ -229,14 +290,26 @@
                     its own solution, sometimes many, and finding just the right way of structuring code to acheive the right functionality is incredibly satisfying.
                 </p>
                 <p>
-                    The future is bright, folks. That's why I have these cool sunglasses.
+                    Thank you for checking out my personal portfolio!
                 </p>
+                <div id="contactMe" class="container">
+                    <div class="row mx-auto justify-content-start">
+                        <div class="col-auto">
+                            <h2>Are you hiring?</h2>
+                        </div>
+                    </div>
+                    <div class="row mx-auto" style="text-align: end;">
+                        <h3>Why not Zoidberg?</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 about-me-image">
+                <span id="picWrapper"><img id="profilePic" src="images/portrait.jpg" /></span>
             </div>
         </div>
     </div>
 </section>
     
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"

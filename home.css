@@ -16,6 +16,8 @@
 
 .navbar-brand {
     margin-left: 10%;
+    color: var(--green);
+    font-size: 1.5em;
 }
 
 #navbarNav {
@@ -23,11 +25,15 @@
 }
 
 .nav-link {
-    color: var(--green);
+    margin: 0 10px 0 10px;
 }
 
 .nav-link:hover {
     color: var(--blue);
+}
+
+.nav-icon {
+    max-width: 2em;
 }
 
 
@@ -68,6 +74,7 @@ section {
 
 .page-header {
     position: relative;
+    margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     font-size: 3.2em;
@@ -93,15 +100,9 @@ section {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    padding-top: 20%;
 }
 
 #siteHeader {
-    display: flex;
-    position: relative;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     padding: 20px;
     border-radius: .3em;
@@ -123,23 +124,14 @@ section {
 #landingNav {
     border: solid 2px var(--green);
     display: flex;
+    text-align: center;
     gap: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 100%);
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
     padding: 1em;
     background-color: var(--transparent);
     border-radius: 1em;
-}
-
-@media screen and (max-width: 520px) {
-    #landingNav {
-        display: none;
-    }
 }
 
 .landing-link {
@@ -200,6 +192,7 @@ section {
 }
 
 .skills-wrapper {
+    margin: 20px;
     justify-content: center;
     display: flex;
     position: relative;
@@ -227,16 +220,38 @@ section {
 }
 
 #skillsPage {
-    margin-top: 40px;
-    color: var(--black);
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+    background-color: var(--transparent);
 }
 
-#skillsHeader {
-    
+#skillsPage::after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(transparent, var(--transparent));
+    position: absolute;
+    left: 0;
+    top: -150px;
+}
+
+#skillsTable {
+    margin-top: 50px;
+    color: var(--white);
+    background-color: var(--transparent);
+    border: solid 2px var(--transparent);
+    box-shadow: 0 0 10px var(--shadow);
+    transition: .3s;
+}
+
+td:hover {
+    text-shadow: 0 0 10px var(--green);
 }
 
 #projectsPage {
     background-color: transparent;
+    margin-bottom: 250px;
 }
 
 .project-card {
@@ -278,6 +293,29 @@ section {
     padding-top: 10px;
 }
 
+#aboutMePage {
+    text-align: justify;
+    color: var(--black);
+    position: relative;
+    margin-top: 300px;
+    background-color: var(--green);
+}
+
+#aboutMePage::after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(var(--transparent), var(--green));
+    position: absolute;
+    left: 0;
+    top: -300px;
+}
+
 .about-me-card {
     background-color: var(--transparent);
+}
+
+#profilePic {
+    max-width: 100%;
+    max-height: 80%;
 }
