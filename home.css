@@ -5,16 +5,16 @@
     --white: #edfcf9;
     --shadow: #00000063;
     --transparent: rgba(0, 0, 0, 0.4);
-    --green-gradient: radial-gradient(circle, rgba(0,255,171,1) 0%, rgba(0,148,99,1) 100%);
+    --transparent-dark: rgba(0, 0, 0, 0.7);
+    --green-transparent: rgba(0, 255, 200, 0.6);
+    --green-gradient: linear-gradient(to left, rgb(0, 255, 200) 0%, rgb(101, 245, 255) 50%, rgb(0, 255, 200) 100%);
 }
-
-
 
 .navbar {
     background-color: var(--black);
 }
 
-.navbar-brand {
+.navbar-dark .navbar-brand {
     margin-left: 10%;
     color: var(--green);
     font-size: 1.5em;
@@ -26,6 +26,7 @@
 
 .nav-link {
     margin: 0 10px 0 10px;
+    display: inline-block;
 }
 
 .nav-link:hover {
@@ -34,6 +35,28 @@
 
 .nav-icon {
     max-width: 2em;
+}
+
+.nav-icon-wrapper {
+    position: relative;
+}
+
+.nav-icon-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--green-transparent);
+    filter: blur(.3em);
+    transition: .3s;
+}
+
+.nav-icon-wrapper:hover::after {
+    filter: blur(0);
 }
 
 
@@ -298,26 +321,77 @@ td:hover {
     color: var(--black);
     position: relative;
     margin-top: 300px;
-    background-color: var(--green);
+    padding-top: 50px;
+    background-color: var(--transparent-dark);
 }
 
 #aboutMePage::after {
     content: "";
     width: 100%;
     height: 300px;
-    background-image: linear-gradient(var(--transparent), var(--green));
+    background-image: linear-gradient(var(--transparent), var(--transparent-dark));
     position: absolute;
     left: 0;
     top: -300px;
 }
 
+#aboutMeHeader {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 3.2em;
+    color: var(--white);
+    text-shadow: 2px 2px var(--black);
+    z-index: 1;
+}
+
+#aboutMeHeader::after {
+    content: "About Me";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: var(--green);
+    filter: blur(.15em);
+    z-index: -1;
+}
+
 .about-me-card {
-    background-color: var(--transparent);
+    position: relative;
+    padding: 40px;
+    margin-top: 40px;
+    font-size: 1.1em;
+    z-index: 1;
+}
+
+.about-me-card::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--green-transparent);
+    filter: blur(1em);
 }
 
 #profilePic {
-    max-width: 50%;
-    max-height: 80%;
+    border: solid 4px var(--blue);
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 2em var(--black);
+    margin: 1.25em;
+}
+
+@media screen and (max-width: 500px) {
+    #profilePic {
+        width: 100%;
+    }
 }
 
 #contactCard {
@@ -329,16 +403,56 @@ td:hover {
 }
 
 .contact-link {
+    margin: 10px 0 10px 0;
     color: var(--white);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-link::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--green-transparent);
+    border-radius: 1em;
+    filter: blur(.5em);
+    transition: .3s;
 }
 
 .contact-link:hover {
     color: var(--blue);
 }
 
+.contact-link:hover::after {
+    filter: blur(0);
+}
+
 .contact-icon {
     max-height: 2em;
+    padding-left: 10px;
     width: auto;
+    display: inline;
+}
+
+.contact-link-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    display: inline;
+    text-decoration: none;
+    font-size: 1.7em;
+    text-shadow: 2px 2px 0 var(--black);
+    transition: .3s;
+}
+
+.contact-link-text:hover {
+    text-shadow: none;
 }
 
 footer {
